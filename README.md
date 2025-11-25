@@ -1,38 +1,47 @@
-# DataStructureRecomendation
-# Decision System – Data Structure Recommendations
+# Data Structure Guided Decision System
 
-This module contains all the output functions related to the 
-final recommendation of a data structure.
+**Equipo:** [Tu Nombre] / [Nombre Compañero 2] / [Nombre Compañero 3]
+**Curso:** Data Structure Course
+**Fecha:** Noviembre 2025
 
-Each structure has its own function, which prints:
+## 📖 Overview
+Este proyecto implementa un **Sistema de Decisión Guiada** diseñado para ayudar a desarrolladores y estudiantes a seleccionar la estructura de datos más adecuada para un problema específico.
 
-- Description  
-- Reasons for recommendation  
-- Alternatives  
-- ASCII illustration  
-- Key operations in pseudocode  
-- Short example  
+A través de una serie de 6 a 8 preguntas interactivas sobre la naturaleza de los datos y los requisitos de rendimiento, el sistema analiza las respuestas y recomienda una estructura (como Arrays, Linked Lists, BSTs, Grafos, etc.).
 
-## Files
+El sistema no solo da el nombre de la estructura, sino que proporciona un contexto educativo completo:
+1.  **Racional:** ¿Por qué se eligió esta estructura?
+2.  **Ilustración:** Representación visual (Arte ASCII).
+3.  **Pseudocódigo:** Algoritmos principales con complejidad Big-O.
+4.  **Ejemplo Real:** Un caso de uso práctico basado en tareas académicas.
 
-### `results.h`
-Contains the declarations of all result functions.
+## ✨ Features
+* **Lógica de Decisión Robusta:** Distingue entre estructuras lineales, jerárquicas y relacionales.
+* **Cobertura Amplia:** Soporta Arrays, Listas (Simples/Circulares), Stacks, Queues, BST, AVL, Heaps y Grafos.
+* **Visualización Integrada:** Muestra diagramas ASCII directamente en la consola.
+* **Run-Anywhere:** Escrito en C estándar, compatible con Windows, Linux y macOS.
+* **Script de Automatización:** Incluye `run.bat` para ejecución rápida en Windows.
 
-### `results.c`
-Contains the full implementation of all result functions:
-- Array  
-- Linked List  
-- Circular Linked List  
-- Stack  
-- Queue  
-- Binary Search Tree  
-- AVL Tree  
-- Max Heap  
-- Graph (Adjacency List)
+## 📂 Project Structure
+La estructura del repositorio sigue los estándares de ingeniería de software:
 
-## Usage
+* `/src`: Código fuente (`main.c`, `results.c`, `results.h`).
+* `/docs`: Documentación de la lógica de decisión y el cuestionario.
+* `/diagrams`: Recursos visuales y capturas de demostración.
+* `/example`: Documentación detallada del ejemplo de uso ("Homework Example").
+* `/tests`: Casos de prueba y planes de validación.
 
-The main program only needs to call:
+## 🚀 Run Instructions (Native)
 
-```c
-showRecommendation(structureID);
+### Prerrequisitos
+* Compilador **GCC** instalado (MinGW en Windows, o build-essential en Linux).
+
+### Opción A: Ejecución Rápida (Windows)
+Simplemente haz doble clic en el archivo `run.bat` ubicado en la raíz del proyecto. Esto compilará y ejecutará el programa automáticamente.
+
+### Opción B: Compilación Manual (Cualquier S.O.)
+Abre tu terminal en la carpeta raíz del proyecto y ejecuta:
+
+**1. Compilar:**
+```bash
+gcc src/main.c src/results.c -o decision_system
